@@ -1,8 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Nixie+One&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Nixie+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
 body{
 background-image: url(/public/lightbackground.jpg);
-background-repeat:repeat;
+background-repeat:no-repeat;
+background-position:center;
+background-size: cover;
+background-attachment: fixed; 
 
 }
 .navbar .nav-link{

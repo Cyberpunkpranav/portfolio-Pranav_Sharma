@@ -1,13 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { useState } from "react";
+import {useState} from "react";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './Portfolio';
-import { Introsection } from './Portfolio';
-import { Introsection2 } from './Portfolio';
+import {Introsection} from './Portfolio';
+import {Introsection2} from './Portfolio';
 import {Work} from './Portfolio';
 import {About} from './Portfolio';
 import {Contact} from './Portfolio';
+
 import './Portfolio.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import '../node_modules/bootstrap/dist/js/bootstrap.bundle.js';
@@ -18,12 +19,14 @@ function Packages(){
    const[background, setbackground] = useState("light")
    const [darkbtntext, lightbtntext] = useState("Enable Dark Mode");
 
+
  const toggleMode = () => {
     if (mode ==="dark") {
      setmode("light");
      lightbtntext("Enable Light Mode");
      setbackground("dark");
      document.body.style.backgroundImage = 'url(/darkbackground.jpg)';
+   
     } else {
       setmode("dark");
       lightbtntext("Enable Dark Mode") 
@@ -31,6 +34,7 @@ function Packages(){
       document.body.style.backgroundImage = 'url(/lightbackground.jpg)'; 
       }
     }
+
  
   return( 
     <div className='body'>
@@ -50,13 +54,13 @@ function Packages(){
   <Introsection2 mode={mode} toggleMode={toggleMode} backgroundmode={background}  
   image={process.env.PUBLIC_URL + 'ECEimage.jpg'} 
   alt="Diploma In ECE" title="Diploma in ECE"
-  text={<><h4>2019-2016</h4><h4>CSI POLYTECHNIC COLLEGE</h4><p>Completed Diploma in first Class Division with Distinction</p></>}/>
+  text={<><h4>2019-2016</h4><h4>CSI POLYTECHNIC COLLEGE</h4><p className='pt-1'>Completed Diploma in first Class Division with Distinction</p></>}/>
   </div>
   <div className="col-4">
     <Introsection2 mode={mode} toggleMode={toggleMode} backgroundmode={background}  
     image={process.env.PUBLIC_URL + 'inter.jpg'} 
     title="Matric(10th Class)" alt="10th class"
-    text={<><h4>2015-2016</h4><h4>C-1 Govt.Boys Senior Secondary School Yamuna Vihar</h4><p>Completed 10<sup>th</sup> in first Division</p></>}/>
+    text={<><h4>2015-2016</h4><h4>C-1 Govt.Boys Senior Secondary School</h4><p>Completed 10<sup>th</sup> in first Division</p></>}/>
     </div></div></>}/>
       <Route path='/Work' element = {<Work mode={mode} toggleMode={toggleMode} backgroundmode={background}/>}/>
       <Route path='/About' element = {<About mode={mode} toggleMode={toggleMode} backgroundmode={background}/>}/>
