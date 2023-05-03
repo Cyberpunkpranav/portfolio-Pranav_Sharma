@@ -52,5 +52,23 @@ let Projectdetails = [
 
     
 ]
+let Education_details =[
+    {
+        image: 'BCAimage.jpg', 
+        alt:"Bachelor in Computer Application",
+        title:"Bachelor in Computer Application",
+        year: '2021-2024',
+        college:'Indira Gandhi National Open University'
+    },
+    {
+        image: 'ECEimage.jpg', 
+        alt:"Diploma in ECE",
+        title:"Diploma in ECE",
+        year: '2016-2019',
+        college:'CSI Polytechnic College'
+    }
 
+
+] 
 export{Projectdetails};
+export{Education_details}
