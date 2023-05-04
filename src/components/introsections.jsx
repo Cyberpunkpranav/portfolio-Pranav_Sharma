@@ -6,11 +6,11 @@ function Introsection(props) {
       <>
         <div className={`section container-fluid text-${props.mode}`}>
           <div className="row align-items-center">
-            <div className="col-lg-8 col-md-6 col-sm-4 col-12 introduction text-start pt-xl-0 pt-sm-0 pt-md-0 pt-sm-0 pt-5  ">
+            <div className="col-lg-8 col-md-6 col-sm-4 col-12 introduction text-start pt-sm-0 pt-md-0 pt-sm-0 pt-5  ">
               <p className='text-wrap p-0 m-0 mt-4'>
-              <span className="">Hello.. </span>I am 
-              <span className='text-warning text-warning-50'>Pranav Sharma</span> I am a <span className='yellow_bg bg-warning '>
-                Front End Developer</span>
+              <span className="">Hello.. </span>I am  
+              <span className='text-warning'> Pranav Sharma </span> I am a <span className='text-warning '>
+                Front End Developer.</span>
               <br className='p-0 m-0'/>
               <p className='p-0 m-0 mt-5'>Today Everyone Wants themselves on internet.</p>
               
@@ -67,9 +67,9 @@ function Introsection(props) {
           </div>
         </div>
         <div className="container-fluid carousel2 mt-lg-5 mb-lg-5 mt-1 mb-1 col-sm-12">
-          <h2 className={`text-center  mt-5 mb-2 text-${props.mode}`}>Technologies I Work On</h2>
+          <h1 className={`text-center  mt-5 mb-2 text-${props.mode}`}>Technologies I Work On</h1>
           <div id="carouselExampleIndicators2" className="carousel slide" data-bs-ride="carousel">
-            <div className="carousel-inner">
+            <div className="carousel-inner rounded-4">
               <div className="carousel-item active">
             <img src={process.env.PUBLIC_URL + "images/html.jpg"} className="d-block border w-100 img-fluid justify-content-center" alt="..." />
             </div>
@@ -109,25 +109,25 @@ function Introsection(props) {
       </>
     );
   }
-  
+    
   function Introsection2(props) {
     return (
       <div className='container-fluid'>
-      <h1 className={`text-center  text-${props.mode} mb-2 mt-5`}>Qualification</h1>
+      <h1 className={`text-center text-${props.mode} mb-2 mt-5`}>Qualification</h1>
       <div className="row g-2 justify-content-evenly">
 
       
       {
        props.data.map((data)=>(
-        <div className="col-10">
-  <div className={`card bg-${props.backgroundmode} text-${props.mode}`}>
-          <img src={process.env.PUBLIC_URL + `images/${data.image}`} className="card-img-top" alt={data.alt} />
-          <div className="card-body">
-            <h5 className="card-title">{data.title}</h5>
-            <p className="card-text">{data.year}</p>
-            <p className="card-text">{data.college}</p>
-          </div>
-          </div>
+        <div className="col-lg-5 col-md-6 col-12 qualifications">
+          <div className="card shadow border-0 text-bg-dark">
+  <img src={process.env.PUBLIC_URL + `images/${data.image}`} className="card-img" alt="..."/>
+  <div className="card-img-overlay">
+    <h2 className="card-title">{data.title}</h2>
+    <h5 className="card-text">{data.college}</h5>
+    <p className="card-text">{data.year}</p>
+  </div>
+</div>
         </div>
       
        ))
