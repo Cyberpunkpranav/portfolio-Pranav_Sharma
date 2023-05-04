@@ -1,13 +1,11 @@
 import React from "react";
-import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-import "../node_modules/bootstrap/dist/js/bootstrap.bundle.js";
 
 function Project(props){
   console.log(props);
     return(
     <>
-    <div className={`card p-0 col-5 g-5 text-${props.props.mode} bg-${props.props.backgroundmode}`}>
-     <img src={process.env.PUBLIC_URL+props.image} className="card-img-top" alt={props.title}/>
+    <div className={`card p-0 col-10 col-md-6 col-sm-10 col-lg-5 g-2 text-${props.props.mode} bg-${props.props.backgroundmode}`}>
+     <img src={process.env.PUBLIC_URL+`images/${props.image}`} className="card-img-top" alt={props.title}/>
      <h5 className="card-title ps-2">{props.title}</h5>
      <p className="card-text ps-2">{props.subtitle}</p>
      <p className="card-text ps-2">{props.description}</p>

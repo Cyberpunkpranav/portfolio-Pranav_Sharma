@@ -63,7 +63,7 @@ let Education_details =[
     {
         image: 'ECEimage.jpg', 
         alt:"Diploma in ECE",
-        title:"Diploma in ECE",
+        title:"Diploma in Electronics and Communication Engineering",
         year: '2016-2019',
         college:'CSI Polytechnic College'
     }
