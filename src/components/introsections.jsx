@@ -1,7 +1,30 @@
 import React from 'react'
 
 function Introsection(props) {
-
+    // const chatinputref = useRef()
+    // const [chat, setchat] = useState('')
+    // const [chatarr, setchatarr] = useState([])
+    // const [openchat, setopenchat] = useState('none')
+    // var client = new websocket('ws://localhost:3500/chat')
+    // let chatarray = []
+  
+  
+    // function sendmessage() {
+    //   chatinputref.current.value = ''
+    //   client.onopen = function Chatopened() {
+    //     console.log("connection established")
+    //     client.send(chat)
+    //   }
+  
+    //   client.onmessage = function message(e) {
+    //     console.log("message sent")
+    //     chatarray.push(e.data)
+    //     setchatarr(prevState => [...prevState, chatarray])
+    //   }
+    //   client.close = function clientclosed() {
+    //     console.log('client closed')
+    //   }
+    // }
     return (
       <>
         <div className={`section container-fluid text-${props.mode}`}>

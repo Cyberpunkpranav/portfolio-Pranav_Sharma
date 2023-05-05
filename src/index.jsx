@@ -7,8 +7,6 @@ import { Work } from '../src/components/Portfolio';
 import { About } from '../src/components/Portfolio';
 import { Contact } from '../src/components/Portfolio';
 import { Education_details } from './components/json'
-// import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-// import '../node_modules/bootstrap/dist/js/bootstrap.bundle.js';
 
 
 function App() {
