@@ -29,7 +29,7 @@ function Introsection(props) {
     <>
       <div className={`section container-fluid text-${props.mode}`}>
         <div className="row justify-content-around ">
-          <div className="col-lg-8 col-md-6 col-sm-4 col-12 col-xl-7 introduction text-start pt-lg-5 ">
+          <div className="col-lg-8 col-md-6 col-sm-4 col-12 order-1 col-xl-7 introduction text-start pt-lg-5 ">
             {/* <span className="">Hello.. </span>I am  
               <span className='text-warning'> Pranav Sharma </span> I am a <span className='text-warning '>
                 Front End Developer.</span>
@@ -47,7 +47,7 @@ function Introsection(props) {
               <a href="/images/PRANAV_SHARMA_RESUME.pdf" className="btn btn-lightpink shadow fs-5 mt-5 px-5" download> Resume </a>
         
           </div>
-          <div className="col-lg-4 col-md-6 col-sm-4 col-xl-3 position-relative justify-content-center ">
+          <div className="profileppic col-lg-4 col-md-6 col-sm-4 col-auto order-sm-1 order-0 col-xl-3 position-relative justify-content-center ">
             <div className="circle1">
               {/* <img
               className="profile img-fluid"
@@ -229,8 +229,8 @@ function Introsection(props) {
         </div>
       </div> */}
       <div div className="container-fluid skills mt-5" >
-        <div className="row justify-content-evenly">
-          <div className="card shadow mb-3" style={{ maxWidth: '540px' }}>
+        <div className="row p-0 m-0 justify-content-evenly">
+          <div className="card col-xl-auto col-lg-auto col-sm-auto col-10 shadow mb-3" style={{ maxWidth: '540px' }}>
             <div className="row g-0 align-items-center">
               <div className="col-md-4">
                 <img src={process.env.PUBLIC_URL + "images/html.jpg"} className=" img-fluid " alt="..." />
@@ -244,7 +244,7 @@ function Introsection(props) {
               </div>
             </div>
           </div>
-          <div className="card shadow mb-3" style={{ maxWidth: '540px' }}>
+          <div className="card col-xl-auto col-lg-auto col-sm-auto col-10 shadow mb-3" style={{ maxWidth: '540px' }}>
             <div className="row g-0 align-items-center">
               <div className="col-md-4">
                 <img src={process.env.PUBLIC_URL + "images/css.jpg"} className="d-block border w-100 img-fluid" alt="..." />
@@ -258,7 +258,7 @@ function Introsection(props) {
               </div>
             </div>
           </div>
-          <div className="card shadow mb-3" style={{ maxWidth: '540px' }}>
+          <div className="card col-xl-auto col-lg-auto col-sm-auto col-10 shadow mb-3" style={{ maxWidth: '540px' }}>
             <div className="row g-0 align-items-center">
               <div className="col-md-4">
                 <img src={process.env.PUBLIC_URL + "images/bootstrap.jpg"} className="d-block border img-fluid" alt="..." />
@@ -266,13 +266,13 @@ function Introsection(props) {
               <div className="col-md-8">
                 <div className="card-body">
                   <h5 className="card-title">Bootstrap</h5>
-                  <p className="card-text">Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. It contains HTML, CSS and JavaScript-based design templates for typography, forms, buttons, navigation, and other interface components.</p>
+                  <p className="card-text">Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development.</p>
                   <a className="text-danger" href="https://www.google.com/search?q=bootstrap&sxsrf=APwXEdc5un3w9IoO_VUttP2431R9Z2FsMw%3A1683635048557&ei=aDtaZPrMIb-U4-EP2tubsA4&ved=0ahUKEwj6oIConej-AhU_yjgGHdrtBuYQ4dUDCA8&uact=5&oq=bootstrap&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIHCCMQigUQJzIHCCMQigUQJzIHCCMQigUQJzIHCAAQigUQQzIHCAAQigUQQzIQCAAQgAQQFBCHAhCxAxCDATIHCAAQigUQQzIHCAAQigUQQzIHCAAQigUQQzILCAAQgAQQsQMQgwE6BwgjELADECc6CggAEEcQ1gQQsAM6CggAEIoFELADEEM6DQgAEOQCENYEELADGAE6DwguEIoFEMgDELADEEMYAjoVCC4QigUQxwEQ0QMQyAMQsAMQQxgCOgcIIxDqAhAnOg8IABCKBRDqAhC0AhBDGAM6EQguEIAEELEDEIMBEMcBENEDOgsIABCKBRCxAxCDAToRCC4QigUQsQMQgwEQxwEQ0QM6BQgAEIAEOg4IABCABBCxAxCDARDJAzoOCAAQgAQQsQMQgwEQkgM6CAgAEIoFEJIDOggIABCABBCxAzoHCCMQsQIQJzoNCAAQgAQQsQMQgwEQCkoECEEYAFC1BViKHGD_HmgFcAF4AIAB0AGIAcsLkgEGMC4xMC4xmAEAoAEBsAEUyAETwAEB2gEGCAEQARgJ2gEGCAIQARgI2gEGCAMQARgB&sclient=gws-wiz-serp" target="_blank">know more..</a>
                 </div>
               </div>
             </div>
           </div>
-          <div className="card shadow mb-3" style={{ maxWidth: '540px' }}>
+          <div className="card col-xl-auto col-lg-auto col-sm-auto col-10 shadow mb-3" style={{ maxWidth: '540px' }}>
             <div className="row g-0 align-items-center">
               <div className="col-md-4">
                 <img src={process.env.PUBLIC_URL + "images/javascript.jpg"} className="d-block border w-100 img-fluid" alt="..." />
@@ -280,13 +280,13 @@ function Introsection(props) {
               <div className="col-md-8">
                 <div className="card-body">
                   <h5 className="card-title">JavaScript</h5>
-                  <p className="card-text">JavaScript, often abbreviated as JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. As of 2022, 98% of websites use JavaScript on the client side for webpage behavior, often incorporating third-party libraries</p>
+                  <p className="card-text">JavaScript, often abbreviated as JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS.</p>
                   <a className="text-danger" href="https://www.google.com/search?q=javascript&sxsrf=APwXEdcdYJa2Gb1t6b6EgMithvbbC1NdrA%3A1683635134964&ei=vjtaZMnCOrTu4-EPv9qqqAk&ved=0ahUKEwjJmZrRnej-AhU09zgGHT-tCpUQ4dUDCA8&uact=5&oq=javascript&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIHCC4QigUQJzIHCCMQigUQJzIHCCMQigUQJzINCAAQigUQsQMQgwEQQzINCAAQigUQsQMQgwEQQzINCAAQigUQsQMQgwEQQzILCAAQgAQQsQMQgwEyCwgAEIAEELEDEIMBMg0IABCKBRCxAxCDARBDMgsIABCABBCxAxCDATITCC4QigUQlwUQ3AQQ3gQQ4AQYAjoKCAAQRxDWBBCwAzoKCAAQigUQsAMQQzoHCCMQ6gIQJzoPCAAQigUQ6gIQtAIQQxgBOgQIIxAnOgcIABCKBRBDOg0IABCKBRCxAxCDARAKOhEILhCABBCxAxCDARDHARDRAzoLCC4QgAQQsQMQgwE6CAguEIAEELEDOggIABCABBCxA0oECEEYAFCWBliaGmDtG2gDcAF4AIABkwGIAaUKkgEEMC4xMJgBAKABAbABFMgBCsABAdoBBggBEAEYAdoBBggCEAEYFA&sclient=gws-wiz-serp" target="_blank">know more..</a>
                 </div>
               </div>
             </div>
           </div>
-          <div className="card shadow mb-3" style={{ maxWidth: '540px' }}>
+          <div className="card col-xl-auto col-lg-auto col-sm-auto col-10 shadow mb-3" style={{ maxWidth: '540px' }}>
             <div className="row g-0 align-items-center">
               <div className="col-md-4">
                 <img src={process.env.PUBLIC_URL + "images/jquery.jpg"} className="border img-fluid" alt="..." />
@@ -294,14 +294,14 @@ function Introsection(props) {
               <div className="col-md-8">
                 <div className="card-body">
                   <h5 className="card-title">JQuery</h5>
-                  <p className="card-text">jQuery is a JavaScript framework designed to simplify HTML DOM tree traversal and manipulation, as well as event handling, CSS animation, and Ajax. It is free, open-source software using the permissive MIT License. As of Aug 2022, jQuery is used by 77% of the 10 million most popular websites</p>
+                  <p className="card-text">jQuery is a JavaScript framework designed to simplify HTML DOM tree traversal and manipulation, as well as event handling, CSS animation, and Ajax.</p>
                   <a className="text-danger" href="https://www.google.com/search?q=jquery&sxsrf=APwXEdf93Lf52OlkH9KXHtlRNJ5rE5J7jg%3A1683635248349&ei=MDxaZMzkFOKE4-EP7qWL-As&ved=0ahUKEwjMvKKHnuj-AhViwjgGHe7SAr8Q4dUDCA8&uact=5&oq=jquery&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIHCCMQigUQJzIHCCMQigUQJzINCAAQigUQsQMQgwEQQzIHCAAQigUQQzIHCAAQigUQQzIHCAAQigUQQzIHCAAQigUQQzILCAAQgAQQsQMQgwEyCggAEIAEEBQQhwIyCAgAEIAEELEDOgcILhCwAxAnOgcIIxCwAxAnOgoIABBHENYEELADOgoIABCKBRCwAxBDOg0IABDkAhDWBBCwAxgBOg8ILhCKBRDIAxCwAxBDGAI6EgguEIoFENQCEMgDELADEEMYAjoHCCMQ6gIQJzoPCAAQigUQ6gIQtAIQQxgDOg8ILhCKBRDqAhC0AhBDGAM6BAgjECdKBAhBGABQ3AhY7BZg3xloBHABeACAAYUBiAH-BZIBAzAuNpgBAKABAbABFMgBE8ABAdoBBggBEAEYCdoBBggCEAEYCNoBBggDEAEYAQ&sclient=gws-wiz-serp" target="_blank">know more..</a>
 
                 </div>
               </div>
             </div>
           </div>
-          <div className="card shadow mb-3" style={{ maxWidth: '540px' }}>
+          <div className="card col-xl-auto col-lg-auto col-sm-auto col-10 shadow mb-3" style={{ maxWidth: '540px' }}>
             <div className="row g-0 align-items-center">
               <div className="col-md-4">
                 <img src={process.env.PUBLIC_URL + "images/react.jpg"} className="border img-fluid " alt="..." />
@@ -309,13 +309,13 @@ function Introsection(props) {
               <div className="col-md-8">
                 <div className="card-body">
                   <h5 className="card-title">React Js</h5>
-                  <p className="card-text">React is a free and open-source front-end JavaScript library for building user interfaces based on components. It is maintained by Meta and a community of individual developers and companies. React can be used to develop single-page, mobile, or server-rendered applications with frameworks like Next.js</p>
+                  <p className="card-text">React is a free and open-source front-end JavaScript library for building user interfaces based on components.React can be used to develop single-page applications.</p>
                   <a className="text-danger" href="https://www.google.com/search?q=React+js&sxsrf=APwXEdd22BDPeYEAIENOMKMSX_xxvRohKg%3A1683635318824&ei=djxaZM7-Mc6I4-EPxsKc-A4&ved=0ahUKEwjOkfConuj-AhVOxDgGHUYhB-8Q4dUDCA8&uact=5&oq=React+js&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIECCMQJzIHCCMQigUQJzIHCCMQigUQJzINCAAQigUQsQMQgwEQQzIFCAAQgAQyCwgAEIAEELEDEIMBMgsIABCABBCxAxCDATIHCAAQigUQQzILCAAQgAQQsQMQgwEyCwgAEIAEELEDEIMBOgcIIxCwAxAnOgoIABBHENYEELADOgoIABCKBRCwAxBDOgcIIxDqAhAnOg8IABCKBRDqAhC0AhBDGAE6CAgAEIAEELEDOgsIABCKBRCxAxCDAToNCC4QigUQxwEQ0QMQQzoQCAAQgAQQFBCHAhCxAxCDAToNCAAQgAQQFBCHAhCxA0oECEEYAFCkCFjUEWDnEmgEcAF4AIABnAGIAfcHkgEDMC44mAEAoAEBsAEUyAEKwAEB2gEGCAEQARgB&sclient=gws-wiz-serp" target="_blank">know more..</a>
                 </div>
               </div>
             </div>
           </div>
-          <div className="card shadow mb-3" style={{ maxWidth: '540px' }}>
+          <div className="card col-xl-auto col-lg-auto col-sm-auto col-10 shadow mb-3" style={{ maxWidth: '540px' }}>
             <div className="row g-0 align-items-center">
               <div className="col-md-4">
                 <img src={process.env.PUBLIC_URL + "images/figma.jpg"} className=" img-fluid" alt="..." />
@@ -329,7 +329,7 @@ function Introsection(props) {
               </div>
             </div>
           </div>
-          <div className="card shadow mb-3" style={{ maxWidth: '540px' }}>
+          <div className="card col-xl-auto col-lg-auto col-sm-auto col-10 shadow mb-3" style={{ maxWidth: '540px' }}>
             <div className="row g-0 align-items-center">
               <div className="col-md-4">
                 <img src={process.env.PUBLIC_URL + "images/adobeillustrator.jpg"} className=" border skills img-fluid " alt="..." />

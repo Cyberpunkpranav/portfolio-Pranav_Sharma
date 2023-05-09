@@ -189,6 +189,7 @@ width:2.5rem;
     }
   }
 @media (max-width:512px) {
+
 .navbar img{
   width:3rem;
   border-radius: 50%;
@@ -205,17 +206,10 @@ width:2.5rem;
 
   .introduction{
     position: relative;
-    font-size: 2rem;
-    color:white;
     /* background-image: linear-gradient(135deg, rgb(175, 175, 119), rgb(105, 105, 41), rgb(77, 77, 9)); */
-    height:100vh;
-    z-index:2;
-  }
-  .introduction span{
-    display: inline-block;
-    height:0;
-    word-spacing: 4px;
-    line-height: 1;
+    font-size: 1.45rem;
+    margin-top: 10%;
+
   }
   .qualifications .card-img-overlay{
     background-color: #00000065;
@@ -231,6 +225,25 @@ width:2.5rem;
   }
   .carousel2 img{
 
+    width:10rem;
+  }
+  .profileppic{
+    margin-top:10%;
+    height:10rem;
+    width:10rem;
+
+  }
+  .circle1{
+    height:10rem;
+    width:10rem;
+  }
+  .circle2{
+    height:10rem;
+    width:10rem;
+
+  }
+  .circle3{
+    height:10rem;
     width:10rem;
   }
 
