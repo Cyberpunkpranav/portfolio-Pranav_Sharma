@@ -24,15 +24,7 @@ function Introsection(props) {
   //     console.log('client closed')
   //   }
   // }
-  const [resume, setresume] = useState("none");
-  const toggleresume = () => {
-    if (resume == "none") {
-      setresume("block");
-    }
-    if (resume == "block") {
-      setresume("none");
-    }
-  };
+
   return (
     <>
       <div className={`section container-fluid text-${props.mode}`}>
@@ -50,80 +42,36 @@ function Introsection(props) {
             websites. Here you can explore my latest projects and learn more
             about my skills and experience. Thank you for visiting, and I hope
             you enjoy your stay!
-            <button
-              onClick={toggleresume}
-              className="btn btn-lightpink fs-5 mt-5 px-5"
-            >
-              {" "}
-              Resume{" "}
-            </button>
-            <div
-              className={`resume d-${resume} position-absolute start-0 end-0 p-5 bg-pink`}
-            >
-              <div
-                className="btn bg-white btn-close"
-                onClick={toggleresume}
-              ></div>
-              <embed
-                src={process.env.PUBLIC_URL + "images/PRANAV_SHARMA_RESUME.pdf"}
-              />
-            </div>
+        
+           
+              <a href="/images/PRANAV_SHARMA_RESUME.pdf" className="btn btn-lightpink shadow fs-5 mt-5 px-5" download> Resume </a>
+        
           </div>
-          <div className="col-lg-4 col-md-6 col-sm-4 col-xl-3 position-relative ">
-            <div className="circle1 mt-4">
+          <div className="col-lg-4 col-md-6 col-sm-4 col-xl-3 position-relative justify-content-center ">
+            <div className="circle1">
               {/* <img
               className="profile img-fluid"
               src={process.env.PUBLIC_URL + "images/profile.jpg"}
             /> */}
             </div>
-            <div className="circle2 position-absolute"></div>
-            <div className="circle3 position-absolute"></div>
+            <div className="circle2 position-absolute shadow"></div>
+            <div className="circle3 position-absolute end-5 shadow"></div>
           </div>
         </div>
         <div className="row justify-content-center">
           <div className="col-auto">
-            <a
-              className="btn btn-lightpink rounded-pill "
-              href="https://www.linkedin.com/in/pranav-sharma-618914187/"
-              target="_blank"
-            >
-              <img
-                className="btn-img"
-                src={process.env.PUBLIC_URL + "images/linkedin.png"}
-              />
-              Linkedin
-            </a>
+            <a className="btn btn-lightpink shadow rounded-pill " href="https://www.linkedin.com/in/pranav-sharma-618914187/" target="_blank" > <img className="btn-img" src={process.env.PUBLIC_URL + "images/linkedin.png"} /> Linkedin </a>
           </div>
           <div className="col-auto">
-            <a
-              className="btn btn-lightpink rounded-pill "
-              href="https://github.com/Cyberpunkpranav"
-              target="_blank"
-            >
-              <img
-                className="btn-img"
-                src={process.env.PUBLIC_URL + "images/github.png"}
-              />
-              Git Hub
-            </a>
+            <a className="btn btn-lightpink shadow rounded-pill " href="https://github.com/Cyberpunkpranav" target="_blank" > <img className="btn-img" src={process.env.PUBLIC_URL + "images/github.png"} /> Git Hub </a>
           </div>
           <div className="col-auto">
-            <a
-              className="btn btn-lightpink rounded-pill "
-              href="mailto: pranavsharma733902@gmail.com"
-              target="_blank"
-            >
-              <img
-                className="btn-img"
-                src={process.env.PUBLIC_URL + "images/email.png"}
-              />
-              Email
-            </a>
+            <a className="btn btn-lightpink shadow rounded-pill " href="mailto: pranavsharma733902@gmail.com" target="_blank" > <img className="btn-img" src={process.env.PUBLIC_URL + "images/email.png"} /> Email </a>
           </div>
         </div>
-      </div>
+      </div >
 
-      <div className="container-fluid px-0 mx-0 w-100 carousel1 mt-lg-5 mb-lg-5 mt-1 mb-1 col-sm-12">
+      {/* <div className="container-fluid px-0 mx-0 w-100 carousel1 mt-lg-5 mb-lg-5 mt-1 mb-1 col-sm-12">
         <h1 className={`text-center  mt-5 mb-2 text-lightpink`}>
           {" "}
           Technologies I Work On{" "}
@@ -242,151 +190,161 @@ function Introsection(props) {
         </div>
       </div>
       <div className="container-fluid carousel2 mt-lg-5 mb-lg-5 mt-1 mb-1 col-sm-12">
-        <h1 className={`text-center  mt-5 mb-2 text-${props.mode}`}>
-          Technologies I Work On
-        </h1>
-        <div
-          id="carouselExampleIndicators2"
-          className="carousel slide"
-          data-bs-ride="carousel"
-        >
+        <h1 className={`text-center  mt-5 mb-2 text-${props.mode}`}> Technologies I Work On </h1>
+        <div id="carouselExampleIndicators2" className="carousel slide" data-bs-ride="carousel" >
           <div className="carousel-inner rounded-4">
             <div className="carousel-item active">
-              <img
-                src={process.env.PUBLIC_URL + "images/html.jpg"}
-                className="d-block border w-100 img-fluid justify-content-center"
-                alt="..."
-              />
+              <img src={process.env.PUBLIC_URL + "images/html.jpg"} className="d-block border w-100 img-fluid justify-content-center" alt="..." />
             </div>
             <div className="carousel-item">
-              <img
-                src={process.env.PUBLIC_URL + "images/react.jpg"}
-                className="d-block border w-100 img-fluid"
-                alt="..."
-              />
+              <img src={process.env.PUBLIC_URL + "images/react.jpg"} className="d-block border w-100 img-fluid" alt="..." />
             </div>
             <div className="carousel-item">
-              <img
-                src={process.env.PUBLIC_URL + "images/adobeillustrator.jpg"}
-                className="d-block border w-100 img-fluid"
-                alt="..."
-              />
+              <img src={process.env.PUBLIC_URL + "images/adobeillustrator.jpg"} className="d-block border w-100 img-fluid" alt="..." />
             </div>
             <div className="carousel-item">
-              <img
-                src={process.env.PUBLIC_URL + "images/jquery.jpg"}
-                className="d-block border w-100 img-fluid"
-                alt="..."
-              />
+              <img src={process.env.PUBLIC_URL + "images/jquery.jpg"} className="d-block border w-100 img-fluid" alt="..." />
             </div>
             <div className="carousel-item">
-              <img
-                src={process.env.PUBLIC_URL + "images/bootstrap.jpg"}
-                className="d-block border w-100 img-fluid"
-                alt="..."
-              />
+              <img src={process.env.PUBLIC_URL + "images/bootstrap.jpg"} className="d-block border w-100 img-fluid" alt="..." />
             </div>
             <div className="carousel-item">
-              <img
-                src={process.env.PUBLIC_URL + "images/javascript.jpg"}
-                className="d-block border w-100 img-fluid"
-                alt="..."
-              />
+              <img src={process.env.PUBLIC_URL + "images/javascript.jpg"} className="d-block border w-100 img-fluid" alt="..." />
             </div>
             <div className="carousel-item">
-              <img
-                src={process.env.PUBLIC_URL + "images/css.jpg"}
-                className="d-block border w-100 img-fluid"
-                alt="..."
-              />
+              <img src={process.env.PUBLIC_URL + "images/css.jpg"} className="d-block border w-100 img-fluid" alt="..." />
             </div>
             <div className="carousel-item">
-              <img
-                src={process.env.PUBLIC_URL + "images/figma.jpg"}
-                className="d-block border w-100 img-fluid"
-                alt="..."
-              />
+              <img src={process.env.PUBLIC_URL + "images/figma.jpg"} className="d-block border w-100 img-fluid" alt="..." />
             </div>
-            <button
-              className="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExampleIndicators2"
-              data-bs-slide="prev"
-            >
-              <span
-                className="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
+            <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="prev" >
+              <span className="carousel-control-prev-icon" aria-hidden="true" ></span>
               <span className="visually-hidden">Previous</span>
             </button>
-            <button
-              className="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExampleIndicators2"
-              data-bs-slide="next"
-            >
-              <span
-                className="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
+            <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="next" >
+              <span className="carousel-control-next-icon" aria-hidden="true" ></span>
               <span className="visually-hidden">Next</span>
             </button>
           </div>
         </div>
-      </div>
-      <div className="container-fluid">
-        <div className="row">
-          <div className="col">
-            <img
-              src={process.env.PUBLIC_URL + "images/html.jpg"}
-              className="border img-fluid rounded-circle"
-              alt="..."
-            />
+      </div> */}
+      <div div className="container-fluid skills mt-5" >
+        <div className="row justify-content-evenly">
+          <div className="card shadow mb-3" style={{ maxWidth: '540px' }}>
+            <div className="row g-0 align-items-center">
+              <div className="col-md-4">
+                <img src={process.env.PUBLIC_URL + "images/html.jpg"} className=" img-fluid " alt="..." />
+              </div>
+              <div className="col-md-8">
+                <div className="card-body">
+                  <h5 className="card-title">HTML5</h5>
+                  <p className="card-text">The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser.</p>
+                  <a className="text-danger" target="_blank" href='https://www.google.com/search?q=html&oq=html&aqs=chrome..69i57j35i39i650j69i60j69i61j69i60j69i65l3.1312j0j7&sourceid=chrome&ie=UTF-8'>know more..</a>
+                </div>
+              </div>
+            </div>
           </div>
-          <div className="col">
-            <img
-              src={process.env.PUBLIC_URL + "images/react.jpg"}
-              className="border img-fluid rounded-circle"
-              alt="..."
-            />
+          <div className="card shadow mb-3" style={{ maxWidth: '540px' }}>
+            <div className="row g-0 align-items-center">
+              <div className="col-md-4">
+                <img src={process.env.PUBLIC_URL + "images/css.jpg"} className="d-block border w-100 img-fluid" alt="..." />
+              </div>
+              <div className="col-md-8">
+                <div className="card-body">
+                  <h5 className="card-title">CSS3</h5>
+                  <p className="card-text">Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language such as HTML or XML.</p>
+                  <a className="text-danger" target="_blank" href="https://www.google.com/search?q=css&sxsrf=APwXEdcNZJUi68gaJVd0H2H7UJZct4GZmQ%3A1683634857132&ei=qTpaZLq5B9bu4-EP7Ny4mAc&ved=0ahUKEwj6sdzMnOj-AhVW9zgGHWwuDnMQ4dUDCA8&uact=5&oq=css&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIHCCMQigUQJzIHCCMQigUQJzIHCCMQigUQJzINCAAQigUQsQMQgwEQQzIHCAAQigUQQzIKCAAQigUQsQMQQzIKCAAQgAQQFBCHAjIHCAAQigUQQzIHCAAQigUQQzILCAAQgAQQsQMQgwE6BwgjELADECc6CggAEEcQ1gQQsAM6CggAEIoFELADEEM6DQgAEOQCENYEELADGAE6EgguEIoFENQCEMgDELADEEMYAjoHCCMQ6gIQJzoPCAAQigUQ6gIQtAIQQxgDOg8ILhCKBRDqAhC0AhBDGAM6EwguEIoFELEDEIMBEMcBENEDEEM6DQguEIoFEMcBENEDEEM6CwgAEIoFELEDEIMBOgUIABCABDoHCAAQgAQQCjoECAAQHkoECEEYAFDFBlirEmDzE2gEcAF4AIABjQGIAZMEkgEDMC40mAEAoAEBsAEUyAERwAEB2gEGCAEQARgJ2gEGCAIQARgI2gEGCAMQARgB&sclient=gws-wiz-serp">know more..</a>
+                </div>
+              </div>
+            </div>
           </div>
-          <div className="col">
-            <img
-              src={process.env.PUBLIC_URL + "images/adobeillustrator.jpg"}
-              className=" border img-fluid rounded-circle"
-              alt="..."
-            />
+          <div className="card shadow mb-3" style={{ maxWidth: '540px' }}>
+            <div className="row g-0 align-items-center">
+              <div className="col-md-4">
+                <img src={process.env.PUBLIC_URL + "images/bootstrap.jpg"} className="d-block border img-fluid" alt="..." />
+              </div>
+              <div className="col-md-8">
+                <div className="card-body">
+                  <h5 className="card-title">Bootstrap</h5>
+                  <p className="card-text">Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. It contains HTML, CSS and JavaScript-based design templates for typography, forms, buttons, navigation, and other interface components.</p>
+                  <a className="text-danger" href="https://www.google.com/search?q=bootstrap&sxsrf=APwXEdc5un3w9IoO_VUttP2431R9Z2FsMw%3A1683635048557&ei=aDtaZPrMIb-U4-EP2tubsA4&ved=0ahUKEwj6oIConej-AhU_yjgGHdrtBuYQ4dUDCA8&uact=5&oq=bootstrap&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIHCCMQigUQJzIHCCMQigUQJzIHCCMQigUQJzIHCAAQigUQQzIHCAAQigUQQzIQCAAQgAQQFBCHAhCxAxCDATIHCAAQigUQQzIHCAAQigUQQzIHCAAQigUQQzILCAAQgAQQsQMQgwE6BwgjELADECc6CggAEEcQ1gQQsAM6CggAEIoFELADEEM6DQgAEOQCENYEELADGAE6DwguEIoFEMgDELADEEMYAjoVCC4QigUQxwEQ0QMQyAMQsAMQQxgCOgcIIxDqAhAnOg8IABCKBRDqAhC0AhBDGAM6EQguEIAEELEDEIMBEMcBENEDOgsIABCKBRCxAxCDAToRCC4QigUQsQMQgwEQxwEQ0QM6BQgAEIAEOg4IABCABBCxAxCDARDJAzoOCAAQgAQQsQMQgwEQkgM6CAgAEIoFEJIDOggIABCABBCxAzoHCCMQsQIQJzoNCAAQgAQQsQMQgwEQCkoECEEYAFC1BViKHGD_HmgFcAF4AIAB0AGIAcsLkgEGMC4xMC4xmAEAoAEBsAEUyAETwAEB2gEGCAEQARgJ2gEGCAIQARgI2gEGCAMQARgB&sclient=gws-wiz-serp" target="_blank">know more..</a>
+                </div>
+              </div>
+            </div>
           </div>
-          <div className="col">
-            <img
-              src={process.env.PUBLIC_URL + "images/jquery.jpg"}
-              className="border img-fluid rounded-circle"
-              alt="..."
-            />
+          <div className="card shadow mb-3" style={{ maxWidth: '540px' }}>
+            <div className="row g-0 align-items-center">
+              <div className="col-md-4">
+                <img src={process.env.PUBLIC_URL + "images/javascript.jpg"} className="d-block border w-100 img-fluid" alt="..." />
+              </div>
+              <div className="col-md-8">
+                <div className="card-body">
+                  <h5 className="card-title">JavaScript</h5>
+                  <p className="card-text">JavaScript, often abbreviated as JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. As of 2022, 98% of websites use JavaScript on the client side for webpage behavior, often incorporating third-party libraries</p>
+                  <a className="text-danger" href="https://www.google.com/search?q=javascript&sxsrf=APwXEdcdYJa2Gb1t6b6EgMithvbbC1NdrA%3A1683635134964&ei=vjtaZMnCOrTu4-EPv9qqqAk&ved=0ahUKEwjJmZrRnej-AhU09zgGHT-tCpUQ4dUDCA8&uact=5&oq=javascript&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIHCC4QigUQJzIHCCMQigUQJzIHCCMQigUQJzINCAAQigUQsQMQgwEQQzINCAAQigUQsQMQgwEQQzINCAAQigUQsQMQgwEQQzILCAAQgAQQsQMQgwEyCwgAEIAEELEDEIMBMg0IABCKBRCxAxCDARBDMgsIABCABBCxAxCDATITCC4QigUQlwUQ3AQQ3gQQ4AQYAjoKCAAQRxDWBBCwAzoKCAAQigUQsAMQQzoHCCMQ6gIQJzoPCAAQigUQ6gIQtAIQQxgBOgQIIxAnOgcIABCKBRBDOg0IABCKBRCxAxCDARAKOhEILhCABBCxAxCDARDHARDRAzoLCC4QgAQQsQMQgwE6CAguEIAEELEDOggIABCABBCxA0oECEEYAFCWBliaGmDtG2gDcAF4AIABkwGIAaUKkgEEMC4xMJgBAKABAbABFMgBCsABAdoBBggBEAEYAdoBBggCEAEYFA&sclient=gws-wiz-serp" target="_blank">know more..</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="card shadow mb-3" style={{ maxWidth: '540px' }}>
+            <div className="row g-0 align-items-center">
+              <div className="col-md-4">
+                <img src={process.env.PUBLIC_URL + "images/jquery.jpg"} className="border img-fluid" alt="..." />
+              </div>
+              <div className="col-md-8">
+                <div className="card-body">
+                  <h5 className="card-title">JQuery</h5>
+                  <p className="card-text">jQuery is a JavaScript framework designed to simplify HTML DOM tree traversal and manipulation, as well as event handling, CSS animation, and Ajax. It is free, open-source software using the permissive MIT License. As of Aug 2022, jQuery is used by 77% of the 10 million most popular websites</p>
+                  <a className="text-danger" href="https://www.google.com/search?q=jquery&sxsrf=APwXEdf93Lf52OlkH9KXHtlRNJ5rE5J7jg%3A1683635248349&ei=MDxaZMzkFOKE4-EP7qWL-As&ved=0ahUKEwjMvKKHnuj-AhViwjgGHe7SAr8Q4dUDCA8&uact=5&oq=jquery&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIHCCMQigUQJzIHCCMQigUQJzINCAAQigUQsQMQgwEQQzIHCAAQigUQQzIHCAAQigUQQzIHCAAQigUQQzIHCAAQigUQQzILCAAQgAQQsQMQgwEyCggAEIAEEBQQhwIyCAgAEIAEELEDOgcILhCwAxAnOgcIIxCwAxAnOgoIABBHENYEELADOgoIABCKBRCwAxBDOg0IABDkAhDWBBCwAxgBOg8ILhCKBRDIAxCwAxBDGAI6EgguEIoFENQCEMgDELADEEMYAjoHCCMQ6gIQJzoPCAAQigUQ6gIQtAIQQxgDOg8ILhCKBRDqAhC0AhBDGAM6BAgjECdKBAhBGABQ3AhY7BZg3xloBHABeACAAYUBiAH-BZIBAzAuNpgBAKABAbABFMgBE8ABAdoBBggBEAEYCdoBBggCEAEYCNoBBggDEAEYAQ&sclient=gws-wiz-serp" target="_blank">know more..</a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="card shadow mb-3" style={{ maxWidth: '540px' }}>
+            <div className="row g-0 align-items-center">
+              <div className="col-md-4">
+                <img src={process.env.PUBLIC_URL + "images/react.jpg"} className="border img-fluid " alt="..." />
+              </div>
+              <div className="col-md-8">
+                <div className="card-body">
+                  <h5 className="card-title">React Js</h5>
+                  <p className="card-text">React is a free and open-source front-end JavaScript library for building user interfaces based on components. It is maintained by Meta and a community of individual developers and companies. React can be used to develop single-page, mobile, or server-rendered applications with frameworks like Next.js</p>
+                  <a className="text-danger" href="https://www.google.com/search?q=React+js&sxsrf=APwXEdd22BDPeYEAIENOMKMSX_xxvRohKg%3A1683635318824&ei=djxaZM7-Mc6I4-EPxsKc-A4&ved=0ahUKEwjOkfConuj-AhVOxDgGHUYhB-8Q4dUDCA8&uact=5&oq=React+js&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIECCMQJzIHCCMQigUQJzIHCCMQigUQJzINCAAQigUQsQMQgwEQQzIFCAAQgAQyCwgAEIAEELEDEIMBMgsIABCABBCxAxCDATIHCAAQigUQQzILCAAQgAQQsQMQgwEyCwgAEIAEELEDEIMBOgcIIxCwAxAnOgoIABBHENYEELADOgoIABCKBRCwAxBDOgcIIxDqAhAnOg8IABCKBRDqAhC0AhBDGAE6CAgAEIAEELEDOgsIABCKBRCxAxCDAToNCC4QigUQxwEQ0QMQQzoQCAAQgAQQFBCHAhCxAxCDAToNCAAQgAQQFBCHAhCxA0oECEEYAFCkCFjUEWDnEmgEcAF4AIABnAGIAfcHkgEDMC44mAEAoAEBsAEUyAEKwAEB2gEGCAEQARgB&sclient=gws-wiz-serp" target="_blank">know more..</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="card shadow mb-3" style={{ maxWidth: '540px' }}>
+            <div className="row g-0 align-items-center">
+              <div className="col-md-4">
+                <img src={process.env.PUBLIC_URL + "images/figma.jpg"} className=" img-fluid" alt="..." />
+              </div>
+              <div className="col-md-8">
+                <div className="card-body">
+                  <h5 className="card-title">Figma</h5>
+                  <p className="card-text">Figma is a collaborative web application for interface design, with additional offline features enabled by desktop applications for macOS and Windows.</p>
+                  <a className="text-danger" href="https://www.google.com/search?q=figma&oq=figma&aqs=chrome.1.69i60j69i59j0i131i433i512j0i433i512j0i512j69i60l2j5.2046j0j7&sourceid=chrome&ie=UTF-8" target="_blank">know more..</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="card shadow mb-3" style={{ maxWidth: '540px' }}>
+            <div className="row g-0 align-items-center">
+              <div className="col-md-4">
+                <img src={process.env.PUBLIC_URL + "images/adobeillustrator.jpg"} className=" border skills img-fluid " alt="..." />
+              </div>
+              <div className="col-md-8">
+                <div className="card-body">
+                  <h5 className="card-title">Adobe Illustrator</h5>
+                  <p className="card-text">Adobe Illustrator is a vector graphics editor and design program developed and marketed by Adobe Inc. Originally designed for the Apple Macintosh, development of Adobe Illustrator began in 1985.</p>
+                  <a className="text-danger" href="https://www.google.com/search?q=adobe+illustrator&sxsrf=APwXEdeEWwXH83aRkbari4B0rw5Q7JT5RA%3A1683635975970&ei=Bz9aZPniOsDp4-EP8eOs6A4&oq=adobe&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAxgAMgoIABCKBRCxAxBDMgcIABCKBRBDMgoIABCKBRCxAxBDMg0IABCKBRCxAxCDARBDMhYILhCDARDHARDUAhCxAxDRAxCKBRBDMg0IABCKBRCxAxCDARBDMg0IABCKBRCxAxCDARBDMgcIABCKBRBDMgsILhCKBRCxAxDlBDIHCAAQigUQQzoKCAAQRxDWBBCwAzoKCAAQigUQsAMQQzoNCAAQ5AIQ1gQQsAMYAToVCC4QigUQxwEQ0QMQyAMQsAMQQxgCOgsIABCABBCxAxCDAToICAAQgAQQsQM6BwgjEOoCECc6DwgAEIoFEOoCELQCEEMYAzoRCAAQigUQ6gIQtAIQChBDGAM6BwgjEIoFECc6BAgjECc6DQguEIoFEMcBENEDEEM6EQguEIAEELEDEIMBEMcBENEDOgsILhCABBCxAxCDAToNCC4QigUQxwEQrwEQJzoHCAAQgAQQCjoNCC4QgAQQxwEQ0QMQCjoFCAAQgARKBAhBGABQsARYtx1ghydoA3ABeAOAAb4BiAHfCpIBBDAuMTCYAQCgAQGwARTIARHAAQHaAQYIARABGAnaAQYIAhABGAjaAQYIAxABGAE&sclient=gws-wiz-serp" target="_blank">know more..</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-
-        <img
-          src={process.env.PUBLIC_URL + "images/bootstrap.jpg"}
-          className="d-block border w-100 img-fluid"
-          alt="..."
-        />
-        <img
-          src={process.env.PUBLIC_URL + "images/javascript.jpg"}
-          className="d-block border w-100 img-fluid"
-          alt="..."
-        />
-        <img
-          src={process.env.PUBLIC_URL + "images/css.jpg"}
-          className="d-block border w-100 img-fluid"
-          alt="..."
-        />
-        <img
-          src={process.env.PUBLIC_URL + "images/figma.jpg"}
-          className="d-block border w-100 img-fluid"
-          alt="..."
-        />
-      </div>
+      </div >
     </>
   );
 }
@@ -394,19 +352,12 @@ function Introsection(props) {
 function Introsection2(props) {
   return (
     <div className="container-fluid">
-      <h1 className={`text-center text-lightpink mb-2 mt-5`}>
-        {" "}
-        Qualification{" "}
-      </h1>
+      <h1 className={`text-center text-lightpink mb-2 mt-5`}> {" "} Qualification{" "} </h1>
       <div className="row g-2 justify-content-evenly">
         {props.data.map((data) => (
           <div className="col-lg-5 col-md-6 col-xl-4 col-12 qualifications">
             <div className="card shadow border-0 text-bg-dark">
-              <img
-                src={process.env.PUBLIC_URL + `images/${data.image}`}
-                className="card-img"
-                alt="..."
-              />
+              <img src={process.env.PUBLIC_URL + `images/${data.image}`} className="card-img" alt="..." />
               <div className="card-img-overlay">
                 <h2 className="card-title">{data.title}</h2>
                 <h5 className="card-text">{data.college}</h5>

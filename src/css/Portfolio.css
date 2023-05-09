@@ -79,33 +79,33 @@ width:2.5rem;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height:20rem;
-    width:20rem;
+    height:80%;
+    width:90%;
     border-radius:50%;
     z-index: 2;
     border:5px solid #ebc6d1  ;
     animation :borderclose 2s ;
   }
   .circle2{
-    height:14rem;
-    width:14rem;
+    height:60%;
+    width:70%;
     background-color: #cd8096;
     border-radius:50%;
     z-index: -1;
     position: absolute;
-    top: 15%;
-    right: -5%;
+    top: 18%;
+    right: 0;
     animation: circlefromTop 4s;
   }
   .circle3{
-    height:14rem;
-    width:14rem;
+    height:60%;
+    width:70%;
     background-color: #F4E2D8;
     border-radius: 50%;
     z-index: -1;
     position: absolute;
-    top:-2%;
-    left:-5%;
+    top:-8%;
+    left:0;
     animation: circlefromDown 4s;
   }
   .carousel1{
@@ -121,10 +121,12 @@ width:2.5rem;
   .projectssection{
     padding-top:5% !important;
   }
+
+
   @keyframes borderclose {
     0% {
-      width:5rem;
-      height:5rem;
+      width:30%;
+      height:20%;
       opacity: 0.2;
     }
     25%{
@@ -137,8 +139,8 @@ width:2.5rem;
       opacity: 0.8;
     }
     100%{
-      width:20rem;
-      height:20rem;
+      width:90%;
+      height:80%;
       opacity: 1;
     }
   }
