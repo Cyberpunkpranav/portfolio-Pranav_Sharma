@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import '../css/bootstrap.css'
 function Introsection(props) {
   // const chatinputref = useRef()
   // const [chat, setchat] = useState('')
@@ -71,163 +71,7 @@ function Introsection(props) {
         </div>
       </div >
 
-      {/* <div className="container-fluid px-0 mx-0 w-100 carousel1 mt-lg-5 mb-lg-5 mt-1 mb-1 col-sm-12">
-        <h1 className={`text-center  mt-5 mb-2 text-lightpink`}>
-          {" "}
-          Technologies I Work On{" "}
-        </h1>
-        <div
-          id="carouselExampleIndicators"
-          className="carousel slide"
-          data-bs-ride="carousel"
-        >
-          <div className="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="0"
-              className="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"
-            ></button>
-          </div>
-
-          <div className="carousel-inner">
-            <div className="carousel-item active">
-              <div className="d-flex justify-content-around">
-                <img
-                  src={process.env.PUBLIC_URL + "images/html.jpg"}
-                  className="d-block border w-25 img-fluid justify-content-center"
-                  alt="..."
-                />
-                <img
-                  src={process.env.PUBLIC_URL + "images/css.jpg"}
-                  className="d-block border w-25 img-fluid"
-                  alt="..."
-                />
-                <img
-                  src={process.env.PUBLIC_URL + "images/javascript.jpg"}
-                  className="d-block border w-25 img-fluid"
-                  alt="..."
-                />
-              </div>
-            </div>
-            <div className="carousel-item">
-              <div className="d-flex justify-content-around">
-                <img
-                  src={process.env.PUBLIC_URL + "images/react.jpg"}
-                  className="d-block border w-25 img-fluid"
-                  alt="..."
-                />
-                <img
-                  src={process.env.PUBLIC_URL + "images/bootstrap.jpg"}
-                  className="d-block border w-25 img-fluid"
-                  alt="..."
-                />
-                <img
-                  src={process.env.PUBLIC_URL + "images/jquery.jpg"}
-                  className="d-block border w-25 img-fluid"
-                  alt="..."
-                />
-              </div>
-            </div>
-            <div className="carousel-item">
-              <div className="d-flex justify-content-around">
-                <img
-                  src={process.env.PUBLIC_URL + "images/react.jpg"}
-                  className="d-block border w-25 img-fluid"
-                  alt="..."
-                />
-                <img
-                  src={process.env.PUBLIC_URL + "images/figma.jpg"}
-                  className="d-block border w-25 img-fluid"
-                  alt="..."
-                />
-                <img
-                  src={process.env.PUBLIC_URL + "images/adobeillustrator.jpg"}
-                  className="d-block border w-25 img-fluid"
-                  alt="..."
-                />
-              </div>
-            </div>
-          </div>
-          <button
-            className="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev"
-          >
-            <span
-              className="carousel-control-prev-icon"
-              aria-hidden="true"
-            ></span>
-            <span className="visually-hidden">Previous</span>
-          </button>
-          <button
-            className="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next"
-          >
-            <span
-              className="carousel-control-next-icon"
-              aria-hidden="true"
-            ></span>
-            <span className="visually-hidden">Next</span>
-          </button>
-        </div>
-      </div>
-      <div className="container-fluid carousel2 mt-lg-5 mb-lg-5 mt-1 mb-1 col-sm-12">
-        <h1 className={`text-center  mt-5 mb-2 text-${props.mode}`}> Technologies I Work On </h1>
-        <div id="carouselExampleIndicators2" className="carousel slide" data-bs-ride="carousel" >
-          <div className="carousel-inner rounded-4">
-            <div className="carousel-item active">
-              <img src={process.env.PUBLIC_URL + "images/html.jpg"} className="d-block border w-100 img-fluid justify-content-center" alt="..." />
-            </div>
-            <div className="carousel-item">
-              <img src={process.env.PUBLIC_URL + "images/react.jpg"} className="d-block border w-100 img-fluid" alt="..." />
-            </div>
-            <div className="carousel-item">
-              <img src={process.env.PUBLIC_URL + "images/adobeillustrator.jpg"} className="d-block border w-100 img-fluid" alt="..." />
-            </div>
-            <div className="carousel-item">
-              <img src={process.env.PUBLIC_URL + "images/jquery.jpg"} className="d-block border w-100 img-fluid" alt="..." />
-            </div>
-            <div className="carousel-item">
-              <img src={process.env.PUBLIC_URL + "images/bootstrap.jpg"} className="d-block border w-100 img-fluid" alt="..." />
-            </div>
-            <div className="carousel-item">
-              <img src={process.env.PUBLIC_URL + "images/javascript.jpg"} className="d-block border w-100 img-fluid" alt="..." />
-            </div>
-            <div className="carousel-item">
-              <img src={process.env.PUBLIC_URL + "images/css.jpg"} className="d-block border w-100 img-fluid" alt="..." />
-            </div>
-            <div className="carousel-item">
-              <img src={process.env.PUBLIC_URL + "images/figma.jpg"} className="d-block border w-100 img-fluid" alt="..." />
-            </div>
-            <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="prev" >
-              <span className="carousel-control-prev-icon" aria-hidden="true" ></span>
-              <span className="visually-hidden">Previous</span>
-            </button>
-            <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="next" >
-              <span className="carousel-control-next-icon" aria-hidden="true" ></span>
-              <span className="visually-hidden">Next</span>
-            </button>
-          </div>
-        </div>
-      </div> */}
+     
       <div div className="container-fluid skills mt-5" >
         <div className="row p-0 m-0 justify-content-evenly">
           <div className="card col-xl-auto col-lg-auto col-sm-auto col-10 shadow mb-3" style={{ maxWidth: '540px' }}>
@@ -332,7 +176,7 @@ function Introsection(props) {
           <div className="card col-xl-auto col-lg-auto col-sm-auto col-10 shadow mb-3" style={{ maxWidth: '540px' }}>
             <div className="row g-0 align-items-center">
               <div className="col-md-4">
-                <img src={process.env.PUBLIC_URL + "images/adobeillustrator.jpg"} className=" border skills img-fluid " alt="..." />
+                <img src={process.env.PUBLIC_URL + "images/adobeillustrator.jpg"} className=" border img-fluid " alt="..." />
               </div>
               <div className="col-md-8">
                 <div className="card-body">

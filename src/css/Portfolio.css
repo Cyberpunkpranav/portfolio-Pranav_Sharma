@@ -233,6 +233,14 @@ width:2.5rem;
     width:10rem;
 
   }
+  .skills {
+    overflow-x: scroll;
+
+  }
+  .skills .row{
+    flex-wrap: nowrap !important;
+    height:max-content;
+  }
   .circle1{
     height:10rem;
     width:10rem;

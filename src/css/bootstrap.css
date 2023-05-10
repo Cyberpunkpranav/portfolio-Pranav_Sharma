@@ -20,6 +20,33 @@
     background-color: white;
     border:1px solid #BA5370
   }
+
+
+  .scroll {
+    padding: 0px;
+    overflow-x: auto;
+    overflow-y: auto;
+    white-space: nowrap;
+    height: max-content;
+}
+
+.scroll::-webkit-scrollbar {
+    height: 0rem;
+    width: 0rem;
+}
+
+.scroll::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+    background: var(--charcoal75);
+    border-radius: 65rem;
+}
+
+.scroll::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
   
 .text-pink{
    color: #BA5370 !important;
@@ -59,6 +86,7 @@ font-size: 0.75rem;
   color:#BA5370;
   cursor: pointer;
   transition: all 0.6s;
+  
 }
 .skills .card:hover{
   scale: 1.1;
@@ -67,4 +95,7 @@ font-size: 0.75rem;
  .card:hover ~ .skills{
   /* backdrop-filter: blur(10px); */
   background-color: black;
+}
+.card{
+  white-space: pre-wrap;
 }
