@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Introsection, Introsection2 } from "./introsections";
 import PropTypes from "prop-types";
 import { Project } from "./projects";
@@ -19,7 +19,26 @@ function Navbar(props) {
     }
   };
   window.addEventListener("scroll", ChangeValueonScroll);
-  
+  const location = useLocation()
+  const Paths = [
+    {
+      name: 'Home',
+      path: "/"
+    },
+    {
+      name: 'Work/Projects',
+      path: "/Projects"
+    },
+    {
+      name: 'About_Me',
+      path: "/About"
+    },
+    {
+      name: 'Contact',
+      path: "/Contact"
+    }
+  ]
+
   return (
     <div
       className="navsection position-fixed top-0 w-100"
@@ -34,7 +53,7 @@ function Navbar(props) {
           href="/"
         >
           {" "}
-          {props.navhead}{" "}
+          Pranav Sharma{" "}
         </a>
 
         <button
@@ -53,10 +72,15 @@ function Navbar(props) {
           id="navbarNavAltMarkup"
         >
           <div className="navbar-nav">
-            <Link className={`nav-link text-white`} to="/">
-              {props.nav1}
-            </Link>
-            <Link className={`nav-link text-white`} to="/Work">
+            {
+              Paths.map((data) => (
+                <Link className={`nav-link bg-${location.pathname == data.path ? 'pink-dark' : ''} text-white`} to={data.path}>
+                  {data.name}
+                </Link>
+              ))
+            }
+
+            {/* <Link className={`nav-link bg-${window.location.pathname == '/Projects' ? 'pink-dark' : ''}  text-white`} to="/Projects">
               {props.nav2}
             </Link>
             <Link className={`nav-link text-white`} to="/About">
@@ -64,21 +88,9 @@ function Navbar(props) {
             </Link>
             <Link className={`nav-link text-white`} to="/Contact">
               {props.nav4}
-            </Link>
+            </Link> */}
           </div>
         </div>
-
-        {/* <div className="form-check form-switch">
-            <input
-              className="form-check-input"
-              type="checkbox"
-              role="switch"
-              onChange={props.toggleMode}
-            />
-            <label className="form-check-label" for="flexSwitchCheckChecked">
-              {props.btnmode}
-            </label>
-          </div> */}
       </nav>
     </div>
   );
@@ -96,7 +108,7 @@ function Introduction(props) {
 function WorkExperience() {
   return (
     <div className="container-fluid workexperince">
-      <h1 className="text-center mt-5 mb-2">Work Experience</h1>
+      <h1 className="text-center text-lightpink mb-5 mt-5">Work Experience</h1>
       <div className="row">
         <div className="col-md-4 col-12">
           <div className="card mb-3 shadow-sm">
@@ -237,18 +249,3 @@ export { Work };
 export { About };
 export { Contact };
 
-Navbar.defaultProps = {
-  navhead: "Pranav Sharma",
-  nav1: "Introduction",
-  nav2: "Work/Projects",
-  nav3: "About_Me",
-  nav4: "Contact",
-};
-
-Navbar.propTypes = {
-  navhead: PropTypes.string,
-  nav1: PropTypes.string,
-  nav2: PropTypes.string,
-  nav3: PropTypes.string,
-  nav4: PropTypes.string,
-};

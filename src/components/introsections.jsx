@@ -29,7 +29,7 @@ function Introsection(props) {
     <>
       <div className={`section container-fluid text-${props.mode}`}>
         <div className="row justify-content-around ">
-          <div className="col-lg-8 col-md-6 col-sm-4 col-12 order-1 col-xl-7 introduction text-start pt-lg-5 ">
+          <div className="col-lg-8 col-md-6 col-sm-4 col-12 order-1 col-xl-7 introduction text-start pt-lg-5 mb-5 ">
             {/* <span className="">Hello.. </span>I am  
               <span className='text-warning'> Pranav Sharma </span> I am a <span className='text-warning '>
                 Front End Developer.</span>
@@ -47,13 +47,8 @@ function Introsection(props) {
               <a href="/images/PRANAV_SHARMA_RESUME.pdf" className="btn btn-lightpink shadow fs-5 mt-5 px-5" download> Resume </a>
         
           </div>
-          <div className="profileppic col-lg-4 col-md-6 col-sm-4 col-auto order-sm-1 order-0 col-xl-3 position-relative justify-content-center ">
-            <div className="circle1">
-              {/* <img
-              className="profile img-fluid"
-              src={process.env.PUBLIC_URL + "images/profile.jpg"}
-            /> */}
-            </div>
+          <div className="profilepic col-lg-4 col-md-6 col-sm-4 col-auto order-sm-1 order-0 col-xl-3 position-relative justify-content-center ">
+            <div className="circle1"> </div>
             <div className="circle2 position-absolute shadow"></div>
             <div className="circle3 position-absolute end-5 shadow"></div>
           </div>
@@ -71,9 +66,10 @@ function Introsection(props) {
         </div>
       </div >
 
+      <h1 className="text-center mb-5 mt-5 shadow">Technologies I Use</h1>
+      <div div className="container-fluid skills" >
+        <div className="row p-0 m-0 justify-content-evenly row1">
      
-      <div div className="container-fluid skills mt-5" >
-        <div className="row p-0 m-0 justify-content-evenly">
           <div className="card col-xl-auto col-lg-auto col-sm-auto col-10 shadow mb-3" style={{ maxWidth: '540px' }}>
             <div className="row g-0 align-items-center">
               <div className="col-md-4">
@@ -196,17 +192,18 @@ function Introsection(props) {
 function Introsection2(props) {
   return (
     <div className="container-fluid">
-      <h1 className={`text-center text-lightpink mb-2 mt-5`}> {" "} Qualification{" "} </h1>
+      <h1 className={`text-center text-lightpink mb-5 mt-5`}> {" "} Qualification{" "} </h1>
       <div className="row g-2 justify-content-evenly">
         {props.data.map((data) => (
           <div className="col-lg-5 col-md-6 col-xl-4 col-12 qualifications">
-            <div className="card shadow border-0 text-bg-dark">
-              <img src={process.env.PUBLIC_URL + `images/${data.image}`} className="card-img" alt="..." />
-              <div className="card-img-overlay">
-                <h2 className="card-title">{data.title}</h2>
-                <h5 className="card-text">{data.college}</h5>
+            <div className="card h-100 shadow border-0">
+              <div className="card-body">
+              <h3 className="card-title">{data.title}</h3>
+                <h6 className="card-text text-pink">{data.college}</h6>
                 <p className="card-text">{data.year}</p>
+                <img className="float-end" src={process.env.PUBLIC_URL +data.image}/>
               </div>
+        
             </div>
           </div>
         ))}

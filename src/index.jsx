@@ -22,15 +22,15 @@ function App() {
 
   return (
 
-      <Router>
-        <Navbar mode={mode} toggleMode={toggleMode} />
-        <Routes>
-          <Route path='/' element={<Introduction mode={mode} toggleMode={toggleMode} data={Education_details} />} />
-          <Route path='/Work' element={<Work mode={mode} toggleMode={toggleMode}  />} />
-          <Route path='/About' element={<About mode={mode} toggleMode={toggleMode}  />} />
-          <Route path='/Contact' element={<Contact mode={mode} toggleMode={toggleMode}  />} />
-        </Routes>
-      </Router>
+    <Router>
+      <Navbar mode={mode} toggleMode={toggleMode} />
+      <Routes>
+        <Route path='/' element={<Introduction mode={mode} toggleMode={toggleMode} data={Education_details} />} />
+        <Route path='/Projects' element={<Work mode={mode} toggleMode={toggleMode} />} />
+        <Route path='/About' element={<About mode={mode} toggleMode={toggleMode} />} />
+        <Route path='/Contact' element={<Contact mode={mode} toggleMode={toggleMode} />} />
+      </Routes>
+    </Router>
   );
 }
 ReactDOM.render(<App />, document.getElementById("root"));

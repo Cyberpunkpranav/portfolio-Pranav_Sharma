@@ -63,6 +63,9 @@
   background: -webkit-linear-gradient(to left, #F4E2D8, #BA5370);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to left, #F4E2D8, #BA5370); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+.bg-pink-dark{
+  background-color: #c93660;
+}
 .btn-lightpink {
 display: flex;
 width:fit-content;
@@ -81,21 +84,44 @@ font-size: 0.75rem;
   color:#F4E2D8;
   box-shadow: 0px 0px 10px 5px #F4E2D8;
 }
-.skills .card{
+h1{
+  color:#F4E2D8 !important;
+  font-size: 1.5rem !important;
+  background-color: #c93660;
+  margin-left:1rem;
+  margin-right:1rem;
+  padding : 0.5rem 0.75rem;
+  border:1px solid #c93660;
+  border-radius: 2rem;
+  max-width: 40%;
+  margin:0 auto;
+}
+.card h3{
+  color:#BA5370 !important;
+}
+
+ .card{
   background-color: #F4E2D8;
+  border:none !important;
   color:#BA5370;
   cursor: pointer;
-  transition: all 0.6s;
+  transition: all 0.5s;
   
 }
-.skills .card:hover{
+ .card:hover{
+  background: linear-gradient(to left, #F4E2D8, #BA5370); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color:#F4E2D8;
   scale: 1.1;
-
 }
- .card:hover ~ .skills{
-  /* backdrop-filter: blur(10px); */
-  background-color: black;
+.card:hover h3 {
+  color:#F4E2D8 !important;
 }
-.card{
-  white-space: pre-wrap;
+.card:hover h6 {
+  color:#F4E2D8 !important;
+}
+.card:hover p {
+  color:#F4E2D8 !important;
+}
+.card-body h3,p,small{
+  color:#BA5370;
 }

@@ -34,7 +34,7 @@ height:100rem;
 .introduction{
   word-spacing: 4px;
   letter-spacing: 1px;
-  height: 55vh;
+  height:fit-content;
   font-size: 1.5rem;
   color:white;
   z-index:2;
@@ -71,8 +71,10 @@ width:2.5rem;
     word-spacing: 4px;
     line-height: 1;
   }
-  .qualifications .card-img-overlay{
-    background-color: #00000065;
+  .profilepic{
+    height:30rem;
+    width:30rem;
+
   }
   .circle1{
     background-image: url(/public/images/profile.jpg);
@@ -108,12 +110,7 @@ width:2.5rem;
     left:0;
     animation: circlefromDown 4s;
   }
-  .carousel1{
-    width:80rem;
-  }
-  .carousel2 {
-    display:none
-  }
+
 
   .workexperince img{
     width:10rem;
@@ -180,14 +177,7 @@ width:2.5rem;
     opacity: 1;
   }
   }
-  @media(min-width:1080px){
-    .carouse1{
-      width:90% !important;
-    }
-    .carousel1 img{
-      width:40rem !important;
-    }
-  }
+
 @media (max-width:512px) {
 
 .navbar img{
@@ -207,27 +197,15 @@ width:2.5rem;
   .introduction{
     position: relative;
     /* background-image: linear-gradient(135deg, rgb(175, 175, 119), rgb(105, 105, 41), rgb(77, 77, 9)); */
-    font-size: 1.45rem;
+    font-size: 1rem;
     margin-top: 10%;
 
   }
   .qualifications .card-img-overlay{
     background-color: #00000065;
   }
-  .profile{
-    display:none;
-  }
-  .carousel1{
-    display:none;
-  }
-  .carousel2{
-    display:block;
-  }
-  .carousel2 img{
-
-    width:10rem;
-  }
-  .profileppic{
+ 
+  .profilepic{
     margin-top:10%;
     height:10rem;
     width:10rem;
@@ -235,11 +213,17 @@ width:2.5rem;
   }
   .skills {
     overflow-x: scroll;
-
   }
-  .skills .row{
+  .skills .row1{
     flex-wrap: nowrap !important;
     height:max-content;
+    width:fit-content;
+  }
+  .skills .card{
+    border:none;
+    padding:1rem;
+    width:20rem;
+    margin-right:1rem;
   }
   .circle1{
     height:10rem;
